@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Books App</title>
-</head>
-<body>
-    <h1>Welcome</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/">Awesome Books</a>
+        </div>
+        <div class="menu">
+          <ul class="menu-items">
+            <li><a href="#" showComponent="book-container">List</a></li>
+            <li><a href="#" showComponent="book-form">Add New</a></li>
+            <li><a href="#" showComponent="contact-info">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="timer">
+        <p id="current-date"></p>
+      </div>
+      
+      <section id="book-container" class="visible">
+        <h1>All Awesome Books</h1>
+        <div id="book-detail">
+          <!-- books container -->
+        </div>
+      </section>
+      
+      <section id="contact-info">
+        <h1>Contact Info</h1>
+        <p>Do you any questions or you just want to say "hello"?</p>
+        <p>You can reach out to us!</p>
+        <ul>
+          <li>Our Email: we@gmail.com</li>
+          <li>Our Phone Number: +233 2493 20950</li>
+          <li>Our Address: Community 10 Sos Street.</li>
+        </ul>
+      </section>
+
+      <section id="book-form">
+        <h1>Add new Book</h1>
+        <form action="">
+          <input
+            type="text"
+            name="book-title"
+            id="book-title"
+            placeholder="Book Title"
+          />
+          <input
+            type="text"
+            name="book-author"
+            id="book-author"
+            placeholder="Book Author"
+          />
+          <input type="submit" id="submit-btn" value="Add" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>copyright</p>
+    </footer>
+    <script type="module" src="js/index.js"></script>
+  </body>
 </html>
